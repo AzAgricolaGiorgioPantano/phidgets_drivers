@@ -199,7 +199,8 @@ void ImuRosI::calibrate()
 
 void ImuRosI::processImuData(CPhidgetSpatial_SpatialEventDataHandle* data, int i)
 {
-  // **** calculate time from timestamp
+
+// **** calculate time from timestamp
   ros::Duration time_imu(data[i]->timestamp.seconds +
                          data[i]->timestamp.microseconds * 1e-6);
 
@@ -211,6 +212,14 @@ void ImuRosI::processImuData(CPhidgetSpatial_SpatialEventDataHandle* data, int i
     time_zero_ = ros::Time::now() - time_imu;
     time_now = ros::Time::now();
   }
+
+  // Ensure that we only publish strictly ordered timestamps,
+  // also in case a time reset happened.
+  if (time_now <= last_published_time_) {
+    ROS_WARN_THROTTLE(1.0, "Ignoring data with out-of-order time.");
+    return;
+	}
+
 
   // **** initialize if needed
 
@@ -265,6 +274,8 @@ void ImuRosI::processImuData(CPhidgetSpatial_SpatialEventDataHandle* data, int i
   }
 
   mag_publisher_.publish(mag_msg);
+
+  last_published_time_ = time_now;
   
   // diagnostics
   diag_updater_.update();

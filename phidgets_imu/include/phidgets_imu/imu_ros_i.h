@@ -53,6 +53,7 @@ class ImuRosI : public Imu
 
     bool initialized_;
     boost::mutex mutex_;
+	ros::Time last_published_time_;
     ros::Time last_imu_time_;
 
     ImuMsg imu_msg_;
