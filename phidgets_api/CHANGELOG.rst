@@ -2,6 +2,19 @@
 Changelog for package phidgets_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.9 (2019-06-28)
+------------------
+* Add missing OnInputChange handler (`#33 <https://github.com/ros-drivers/phidgets_drivers/issues/33>`_)
+* Contributors: Kai Hermann
+
+0.7.8 (2019-05-06)
+------------------
+* Install udev rules on binary package installation
+* Contributors: Martin Günther
+
+0.7.7 (2018-09-18)
+------------------
+
 0.7.6 (2018-08-09)
 ------------------
 

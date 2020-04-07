@@ -2,6 +2,17 @@
 Changelog for package libphidget21
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.9 (2019-06-28)
+------------------
+* Update libphidget to version 2.1.9.20190409 (`#34 <https://github.com/ros-drivers/phidgets_drivers/issues/34>`_)
+* Contributors: Tim Fanselow
+
+0.7.8 (2019-05-06)
+------------------
+
+0.7.7 (2018-09-18)
+------------------
+
 0.7.6 (2018-08-09)
 ------------------
 * libphidget21: Disable warning in CFLAGS
