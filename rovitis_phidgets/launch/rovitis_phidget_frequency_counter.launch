@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node respawn="true" pkg="rovitis_phidgets" type="phidgets_frequency_counter" name="phidgets_frequency_counter" output="log">
+		<param name="dev_serial_number" type="int" value="137778" />
+		<param name="dev_serial_label" type="string" value="phidgets_frequency_counter" />
+		<param name="frame" type="string" value="/phidget_fc" />
+		<param name="wait_for_dev_delay" type="int" value="10000" />
+		<param name="publish_frequency" type="int" value="10" />
+		<param name="topic_name" type="string" value="/phidget_frequency_counter" />
+		<param name="reset_service_name" type="string" value="phidgets_frequency_counter_reset" />		
+		<param name="enable_ch0" type="bool" value="true" />
+		<param name="enable_ch1" type="bool" value="true" />
+		<param name="filter_ch0" type="string" value="logic_level" />		
+		<param name="filter_ch1" type="string" value="logic_level" />
+	</node>
+</launch>

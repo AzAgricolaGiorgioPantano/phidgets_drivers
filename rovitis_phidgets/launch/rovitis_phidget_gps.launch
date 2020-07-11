@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node respawn="true" pkg="rovitis_phidgets" type="phidgets_gps" name="phidgets_gps" output="log">
+		<param name="dev_serial_number" type="int" value="131340" />
+		<param name="dev_serial_label" type="string" value="phidgets_gps" />
+		<param name="frame" type="string" value="/phidget_gps" />
+		<param name="wait_for_dev_delay" type="int" value="10000" />
+		<param name="publish_frequency" type="int" value="5" />
+		<param name="topic_name" type="string" value="/phidgets_gps" />
+	</node>
+</launch>

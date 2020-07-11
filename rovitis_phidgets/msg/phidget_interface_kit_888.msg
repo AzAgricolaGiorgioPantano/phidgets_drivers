@@ -1,0 +1,26 @@
+Header header
+int32 di_ch1
+int32 di_ch2
+int32 di_ch3
+int32 di_ch4
+int32 di_ch5
+int32 di_ch6
+int32 di_ch7
+int32 di_ch8
+int32 do_ch1
+int32 do_ch2
+int32 do_ch3
+int32 do_ch4
+int32 do_ch5
+int32 do_ch6
+int32 do_ch7
+int32 do_ch8
+int32 an_ch1
+int32 an_ch2
+int32 an_ch3
+int32 an_ch4
+int32 an_ch5
+int32 an_ch6
+int32 an_ch7
+int32 an_ch8
+

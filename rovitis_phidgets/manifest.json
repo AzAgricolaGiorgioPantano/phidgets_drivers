@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.rovitis-phidgets",
+    "description": "description of rovitis-phidgets",
+    "framework": "ubuntu-sdk-14.04-qml",
+    "architecture": "all",
+    "title": "rovitis-phidgets",
+    "hooks": {
+        "rovitis-phidgets": {
+            "apparmor": "rovitis-phidgets.json",
+            "desktop": "rovitis_phidgets.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

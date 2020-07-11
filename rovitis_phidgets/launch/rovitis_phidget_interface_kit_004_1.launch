@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node respawn="true" pkg="rovitis_phidgets" type="phidgets_interface_kit_004" name="phidgets_interface_kit_004_1" output="log">
+		<param name="dev_serial_number" type="int" value="379263" />
+		<param name="dev_serial_label" type="string" value="phidgets_interface_kit_004_1" />
+		<param name="frame" type="string" value="/phidget_ik" />
+		<param name="wait_for_dev_delay" type="int" value="10000" />
+		<param name="publish_frequency" type="int" value="5" />
+		<param name="topic_name" type="string" value="/phidgets_interface_kit_004_1" />
+		<param name="set_service_name" type="string" value="phidgets_interface_kit_004_set_1" />		
+	</node>
+</launch>

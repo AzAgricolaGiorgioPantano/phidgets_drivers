@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node respawn="true" pkg="rovitis_phidgets" type="phidgets_stepper_bipolar" name="phidgets_stepper_bipolar_1" output="log">
+		<param name="dev_serial_number" type="int" value="322218" />
+		<param name="dev_serial_label" type="string" value="phidgets_stepper_bipolar_1" />
+		<param name="frame" type="string" value="/phidget_sb" />
+		<param name="wait_for_dev_delay" type="int" value="10000" />
+		<param name="publish_frequency" type="int" value="5" />
+		<param name="motor_acceleration" type="double" value="200000" />
+		<param name="motor_velocity" type="double" value="1000" />
+		<param name="topic_name" type="string" value="/phidgets_stepper_bipolar_pose_1" />
+		<param name="set_pose_service_name" type="string" value="phidgets_stepper_bipolar_set_1" />	
+	</node>
+</launch>

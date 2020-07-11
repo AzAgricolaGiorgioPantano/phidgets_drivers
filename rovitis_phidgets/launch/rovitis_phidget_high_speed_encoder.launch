@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node respawn="true" pkg="rovitis_phidgets" type="phidgets_high_speed_encoder" name="phidgets_high_speed_encoder" output="log">
+		<param name="dev_serial_number" type="int" value="54494" />
+		<param name="dev_serial_label" type="string" value="phidgets_high_speed_encoder" />
+		<param name="frame" type="string" value="/phidget_hs" />
+		<param name="wait_for_dev_delay" type="int" value="10000" />
+		<param name="publish_frequency" type="int" value="10" />
+		<param name="topic_name" type="string" value="/phidgets_high_speed_encoder" />
+		<param name="set_service_name" type="string" value="phidgets_high_speed_encoder" />	
+	</node>
+</launch>

@@ -1,0 +1,12 @@
+Header header
+float32 imu_msg_linear_acceleration_x
+float32 imu_msg_linear_acceleration_y
+float32 imu_msg_linear_acceleration_z
+float32 imu_msg_angular_velocity_x
+float32 imu_msg_angular_velocity_y
+float32 imu_msg_angular_velocity_z
+float32 mag_msg_vector_x
+float32 mag_msg_vector_y
+float32 mag_msg_vector_z
+
+
